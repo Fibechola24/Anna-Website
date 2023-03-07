@@ -15,16 +15,14 @@
       property="og:description"
       content="The portfolio page for Anna Mendes, including samples and contact information."
     />
-    
-    <meta property="og:url" content="https://annamendes.netlify.app"/>
+
+    <meta property="og:url" content="https://annamendes.netlify.app" />
 
     <meta
       property="og:image"
       content="https://annamendes.netlify.app/img/Ally.png"
     />
 
-
-    
     <meta property="og:image:alt" content="A smiling Anna Mendes." />
 
     <meta property="og:locale" content="en_US" />
@@ -43,6 +41,26 @@
 
       <div id="contact-me">
         <h2>Contact me here</h2>
+        <form id="contact-form" action="" method="post">
+          <div>
+            <label for="name">Name: </label>
+            <input id="name" type="text" name="name" required />
+          </div>
+          <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" required />
+          </div>
+          <div>
+            <label for="message">Message: </label>
+            <textarea name="message" id="message" rows="5" required>
+Enter your message here</textarea
+            >
+          </div>
+          <div>
+            <button type="submit">Contact Anna Mendes</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
       </div>
 
       <div id="portfolio-section">
