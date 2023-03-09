@@ -8,8 +8,12 @@ html {
 body {
   max-width: 1440px;
   margin: auto;
-}
+  background-color: rgba(0,0,0,0.034);
 
+}
+main {
+    background-color: #fff;
+  }
 h1 {
   font-weight: 700;
   color: #ffff;
@@ -24,6 +28,19 @@ h2 {
   font-size: 2rem;
   text-transform: uppercase;
 }
+nav ul {
+  margin: 0;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
 p {
   line-height: 1.5rem;
   text-align: justify;
@@ -49,10 +66,10 @@ button {
   font-size: 0.75rem;
   padding: 0.25rem 5%;
   margin: 0.25rem;
-} 
+}
 
 header {
-  background-color: #f6c3c3;
+  background-color: #000;
   color: #fff;
   font-size: 0.67rem;
   text-align: right;
@@ -118,3 +135,33 @@ footer {
 #my-story h2 {
   margin: 1rem 0;
 }
+
+#portfolio-main {
+    margin-top: 0.05rem;
+    margin-bottom: 0.05rem;
+  }
+.highlight {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #000;
+  }
+  .highlight h2 {
+    color: #fff;
+  }
+  
+  .highlight a {
+    color: #d8b33c;
+    font-size: 2rem;
+  }
+
+  .highlight.invert {
+    flex-direction: row-reverse;
+  } 
+  .highlight > div {
+    flex-grow: 1;
+  } 
+
+  .highlight > img {
+    max-width: 50%;
+  }
