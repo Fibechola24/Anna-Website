@@ -8,12 +8,11 @@ html {
 body {
   max-width: 1440px;
   margin: auto;
-  background-color: rgba(0,0,0,0.034);
-
+  background-color: rgba(0, 0, 0, 0.034);
 }
 main {
-    background-color: #fff;
-  }
+  background-color: #fff;
+}
 h1 {
   font-weight: 700;
   color: #ffff;
@@ -38,9 +37,9 @@ nav ul li {
   padding-right: 0.5rem;
 }
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
+  color: #fff;
+  text-decoration: none;
+}
 p {
   line-height: 1.5rem;
   text-align: justify;
@@ -137,31 +136,52 @@ footer {
 }
 
 #portfolio-main {
-    margin-top: 0.05rem;
-    margin-bottom: 0.05rem;
-  }
+  margin-top: 0.05rem;
+  margin-bottom: 0.05rem;
+}
 .highlight {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background-color: #000;
-  }
-  .highlight h2 {
-    color: #fff;
-  }
-  
-  .highlight a {
-    color: #d8b33c;
-    font-size: 2rem;
-  }
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #000;
+}
+.highlight h2 {
+  color: #fff;
+}
 
-  .highlight.invert {
-    flex-direction: row-reverse;
-  } 
-  .highlight > div {
-    flex-grow: 1;
-  } 
+.highlight a {
+  color: #d8b33c;
+  font-size: 2rem;
+}
 
-  .highlight > img {
-    max-width: 50%;
-  }
+.highlight.invert {
+  flex-direction: row-reverse;
+}
+.highlight > div {
+  flex-grow: 1;
+}
+
+.highlight > img {
+  max-width: 50%;
+}
+#work-item-header {
+  margin: 0;
+  text-align: center;
+}
+
+#work-item-image {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.work-item-text {
+  padding: 0.3rem 15%;
+}
+
+.work-item-text h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.work-item-text p,
+.work-item-text ul {
+  margin-top: 0;
+}
