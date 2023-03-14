@@ -290,3 +290,47 @@ footer {
 
 @media screen and (min-width: 1200px) {
 }
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  @page {
+    margin: 1in;
+    size: letter portait;
+  }
+
+  html {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  header, footer {
+    display: none;
+  }
+
+  #work-item-image {
+    max-height: 350px;
+    width: auto;
+  }
+}
